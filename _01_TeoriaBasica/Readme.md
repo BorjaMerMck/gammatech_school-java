@@ -1,0 +1,7 @@
+
+## Metodos de String
+
+- split()
+
+
+

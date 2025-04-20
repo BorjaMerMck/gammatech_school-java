@@ -1,0 +1,2 @@
+Hola mundo desde Java!
+Esta línea también se guarda en el archivo.

@@ -1,0 +1,43 @@
+
+deck es que el blackjack solo puede tener 52 cartas 
+
+ // para los colores de consola
+ https://dryant.com/programacion/como-poner-el-texto-de-color-en-la-consola-o-terminal-ejemplo-en-java/
+ 
+ 
+ 
+ 
+ static String[] deck = new String[52];  // Array para almacenar las 52 cartas
+ 
+ 
+ 
+
+ static int deckIndex = 0;               // Índice para saber qué carta toca repartir
+
+ 
+ 
+ En el blackjack, las cartas tienen los siguientes valores:
+
+Cartas numéricas (2-10): Valen su propio número.
+
+Figuras (J, Q, K): Valen 10 puntos cada una.
+
+As (A): Puede valer 1 u 11, dependiendo de qué sea más beneficioso para la mano.
+
+
+
+/*
+
+guia de variables:
+
+ static String[] deck = new String[52];  // Array para almacenar las 52 cartas
+
+jugador 
+
+
+*/
+
+
+
+
+
