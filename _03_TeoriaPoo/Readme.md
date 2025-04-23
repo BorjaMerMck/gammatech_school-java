@@ -119,7 +119,7 @@ abstract class Figura {
 
 animal t = new Trucha(); 
 
-// no se puede crear 
+
 ```
 
 ## Enumerados (`enum`)
