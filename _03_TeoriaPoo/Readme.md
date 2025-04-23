@@ -168,3 +168,159 @@ if (obj instanceof String) {
     System.out.println("Es una cadena de texto");
 }
 ```
+
+## JavaDoc
+
+
+## Anotaciones en JavaDoc
+
+Para generar API con JavaDoc podemos usar ciertas palabras reservadas precedidas por el carácter "`@`" que son llamadas **anotaciones** <b>anotaciones</b>. El objetivo de las anotaciones es la de enriquecer la documentación y de organizarla de una manera estándar. Cada anotación representa un valor diferente y tenemos distinto tipos.
+
+Veamos las principales anotaciones que existen:
+
+<table style="border: 1px solid">
+ 	<tr><th>ANOTACION</th><th style="text-align:left">DESCRIPCION</th></tr>
+ 	<tr><td style="font-weight:bold">@author</td><td>Nombre del desarrollador</td></tr>
+	<tr><td style="font-weight:bold">@version</td><td>Versión del método o clase</td></tr>
+	<tr><td style="font-weight:bold">@param</td><td>Definición de un parámetro de entrada de un método, es requerido para todos los parámetros del método</td></tr>
+	<tr><td style="font-weight:bold">@return</td><td>Informa de lo que devuelve el método, no se puede usar en constructores o métodos "void"</td></tr>
+	<tr><td style="font-weight:bold">@throws</td><td>Excepción lanzada por el método, primero la clase y luego la explicación</td></tr>
+	<tr><td style="font-weight:bold">@see</td><td>Asocia con un elemento externo como un método, una clase o cualquier recurso en la red. Varias maneras de hacer referencia -> #metodo(); clase#metodo(); paquete.clase; paquete.clase#metodo(). Tambien podemos usar la anotacion @link (ver más abajo)</td></tr>
+	<tr><td style="font-weight:bold">@since</td><td>Usado principalmente en metodos. Nos dice desde que versión de la clase se encuentra el método en dicha clase</td></tr>
+	<tr><td style="font-weight:bold">@link</td><td>Para crear un hipervinculo sobre un texto dentro del mismo programa. Si queremos usar hipervínculos externos podemos usar la etiqueta A de HTML.</td></tr>
+	<tr><td style="font-weight:bold">@deprecated</td><td>Indica que el método o clase es antigua y que no se recomienda su uso porque posiblemente desaparecerá en versiones posteriores</td></tr>
+</table>
+
+
+
+Esta guía te ayudará a documentar tus clases y métodos en Java utilizando Javadoc de manera **profesional y clara**. Sigue esta checklist para asegurarte de que tu código esté bien documentado.
+
+---
+
+## ✅ Checklist de Documentación
+
+### 1. Encabezado de clase
+
+Incluye:
+- Qué representa la clase.
+- Para qué sirve.
+- Enlaces a otras clases (opcional).
+- Autor y versión.
+
+```java
+/**
+ * Clase que representa un coche en el sistema de carreras.
+ * Hereda de {@link Vehicle} e implementa características específicas de coches.
+ * 
+ * @author Borja
+ * @version 1.0
+ */
+```
+
+---
+
+### 2. Atributos (campos)
+
+Explica qué representa cada atributo, especialmente si es público o protegido.
+
+```java
+/**
+ * Indica si el coche tiene turbo.
+ */
+private boolean hasTurbo;
+```
+
+---
+
+### 3. Constructor(es)
+
+Describe qué hace y documenta cada parámetro con `@param`.
+
+```java
+/**
+ * Crea un nuevo coche con los parámetros especificados.
+ * 
+ * @param model el modelo del coche
+ * @param engineType el tipo de motor
+ * @param maxSpeed la velocidad máxima
+ * @param preferredTrack el tipo de pista preferida
+ * @param hasTurbo si tiene turbo
+ */
+```
+
+---
+
+### 4. Métodos públicos
+
+Documenta:
+- Qué hace el método.
+- Qué parámetros recibe (`@param`).
+- Qué devuelve (`@return`).
+- Qué excepciones lanza (`@throws`).
+
+```java
+/**
+ * Activa el modo turbo si está disponible.
+ * 
+ * @throws IllegalStateException si el coche ya está en modo turbo
+ */
+public void activateTurbo() { ... }
+```
+
+---
+
+### 5. Métodos sobrescritos
+
+Explica el comportamiento sobrescrito y su propósito.
+
+```java
+/**
+ * Devuelve true si el coche necesita mantenimiento tras la carrera.
+ * 
+ * @return true si requiere servicio, false en caso contrario
+ */
+@Override
+public boolean needsService() { ... }
+```
+
+---
+
+### 6. Métodos abstractos
+
+Describe el contrato que debe implementar la subclase.
+
+```java
+/**
+ * Calcula la puntuación de rendimiento del vehículo.
+ * 
+ * @return puntuación como valor decimal
+ */
+public abstract double calculatePerformanceScore();
+```
+
+---
+
+## 🧩 Etiquetas útiles
+
+| Etiqueta      | Uso |
+|---------------|-----|
+| `@param`      | Describe un parámetro del método |
+| `@return`     | Qué devuelve el método |
+| `@throws`     | Qué excepción lanza |
+| `@author`     | Autor del código |
+| `@version`    | Versión del archivo o clase |
+| `@see`        | Enlaces a clases o métodos relacionados |
+| `@deprecated` | Marca el elemento como obsoleto |
+
+---
+
+## 🎯 Estilo Profesional
+
+- Usa **tercera persona** o infinitivo: "Devuelve", "Establece", "Calcula".
+- Sé **claro, conciso y específico**.
+- Evita comentarios redundantes si el nombre del método lo explica todo.
+- Usa `{@link Clase}` o `{@inheritDoc}` si aplica.
+
+---
+
+¡Con esta guía tu código será mucho más entendible y profesional! 🚀
