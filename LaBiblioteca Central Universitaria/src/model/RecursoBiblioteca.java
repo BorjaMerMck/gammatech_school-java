@@ -6,7 +6,7 @@ public abstract class RecursoBiblioteca {
     protected String id;
     protected String titulo;
     protected EstadoRecurso estado;
-
+   
     public RecursoBiblioteca(String id, String titulo) {
         this.id = id;
         this.titulo = titulo;

@@ -1,8 +1,8 @@
 package model;
 
+import enums.EstadoRecurso;
+
 public class DVD extends RecursoBiblioteca {
-	private static final String Azul = "\u001B[34m";
-    private static final String PorDefecto = "\u001B[0m";
 
 	private int duracionMinutos;
 
@@ -13,7 +13,11 @@ public class DVD extends RecursoBiblioteca {
 
     @Override
     public String descripcion() {
-        return  Azul + "DVD: " + titulo +" (ID: " + id +  PorDefecto + "), Duración: " + duracionMinutos + " minutos, Estado: " + estado;
+        return  Colors.Azul  +"DVD: " + titulo +
+        		" (ID: " + id +  Colors.PorDefecto + 
+        		"), Duración: " + duracionMinutos + " minutos," +
+        		", Estado: " + (estado.equals(EstadoRecurso.DISPONIBLE) ? Colors.Amarrillo + estado : Colors.Rojo + estado);
+
     }
 }
 

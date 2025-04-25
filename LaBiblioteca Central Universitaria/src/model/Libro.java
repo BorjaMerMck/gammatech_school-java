@@ -1,9 +1,9 @@
 package model;
 
+import enums.EstadoRecurso;
+
 
 public class Libro extends RecursoBiblioteca {
-	private static final String Azul = "\u001B[34m";
-    private static final String PorDefecto = "\u001B[0m";
 
 	private String autor;
 	
@@ -14,6 +14,10 @@ public class Libro extends RecursoBiblioteca {
 
     @Override
     public String descripcion() {
-        return Azul + "Libro: " + titulo  +   " (ID: " + id + PorDefecto + "), Autor: " + autor + ", Estado: " + estado;
+    	
+        return Colors.Azul + "Libro: " + titulo  +
+        		" (ID: " + id + 
+        		Colors.PorDefecto + "), Autor: " + autor +
+        		", Estado: " + (estado.equals(EstadoRecurso.DISPONIBLE) ? Colors.Amarrillo + estado : Colors.Rojo + estado);
     }
 }

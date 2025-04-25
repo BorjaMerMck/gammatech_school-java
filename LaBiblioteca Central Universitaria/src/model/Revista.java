@@ -1,9 +1,8 @@
 package model;
-
+import enums.EstadoRecurso;
+import model.Colors;
 public class Revista  extends RecursoBiblioteca  {
-	private static final String Azul = "\u001B[34m";
-    private static final String PorDefecto = "\u001B[0m";
-
+	
 	private int numeroEdicion;
 
 	public Revista(String id, String titulo ,int duracionMinutos) {
@@ -13,7 +12,11 @@ public class Revista  extends RecursoBiblioteca  {
 	
     @Override
     public String descripcion() {
-        return Azul +"Revista: " +  titulo + " (ID: " + id + PorDefecto + " ), Edición: " + numeroEdicion + ", Estado: " + estado;
+        return Colors.Azul +"Revista: " +  titulo + 
+        		" (ID: " + id + Colors.PorDefecto +
+        		" ), Edición: " + numeroEdicion +
+        		", Estado: " + (estado.equals(EstadoRecurso.DISPONIBLE) ? Colors.Amarrillo + estado : Colors.Rojo + estado);
+
     }
 
 	

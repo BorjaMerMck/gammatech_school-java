@@ -90,7 +90,7 @@ src/
   - [x] Comando `salir`
   - [ ] Mejorar el diseño del ouput 
   - [ ] hacer javadoc 
-
+  - [ ] test errores
 ---
 
 ### 📌 Bonus: Diagrama UML (Opcional, recomendado)
