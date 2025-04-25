@@ -9,19 +9,18 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         BibliotecaManager manager = new BibliotecaManager();
 
-        // Usuarios
-        manager.agregarUsuario(new Usuario("U001", "Ana Gómez"));
-        manager.agregarUsuario(new Usuario("U002", "Luis Fernández"));
 
-        // Libros
+        manager.agregarUsuario(new Usuario("U001", "Borja Merchann Mckenna"));
+        manager.agregarUsuario(new Usuario("U002", "Frankie Merchan Mckenna"));
+
+
         manager.agregarRecurso(new Libro("L001", "El Quijote", "Cervantes"));
         manager.agregarRecurso(new Libro("L002", "1984", "George Orwell"));
 
-        // Revistas
+
         manager.agregarRecurso(new Revista("R001", "National Geographic", 120));
         manager.agregarRecurso(new Revista("R002", "Muy Interesante", 210));
 
-        // DVDs
         manager.agregarRecurso(new DVD("D001", "Matrix", 136));
         manager.agregarRecurso(new DVD("D002", "El Señor de los Anillos", 180));
 
