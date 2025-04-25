@@ -67,28 +67,29 @@ src/
 
 ### 6. Clase `BibliotecaManager` (pendiente)
 - [x] Implementar la interfaz `Prestamista`
-  - [x] `devolver`
-  - [x] `prestar`
+	- [x] `prestar(RecursoBiblioteca recurso, Usuario usuario)`
+	- [x] `devolver(RecursoBiblioteca recurso)`
 - [x] Atributos:
   - [x] `Map<String, RecursoBiblioteca> recursos`
   - [x] `Map<String, Usuario> usuarios`
 - [ ] Métodos:
-  - [ ] `agregarRecurso(RecursoBiblioteca recurso)`
-  - [ ] `agregarUsuario(Usuario usuario)`
-  - [ ] `obtenerRecurso(String id)`
-  - [ ] `obtenerUsuario(String id)`
-  - [ ] `listarRecursos()`
-  - [ ] `prestar(RecursoBiblioteca recurso, Usuario usuario)`
-  - [ ] `devolver(RecursoBiblioteca recurso)`
+  - [x] `agregarRecurso(RecursoBiblioteca recurso)`
+  - [x] `agregarUsuario(Usuario usuario)`
+  - [x] `obtenerRecurso(String id)`
+  - [x] `obtenerUsuario(String id)`
+  - [x] `listarRecursos()`
+  
 
 ### 7. Clase `Main` (`app/Main.java`)
 - [x] Crear instancia de `BibliotecaManager`
 - [x] Leer comandos con `Scanner`
-- [ ] Implementar menú interactivo:
-  - [ ] Comando `prestar <idRecurso> <idUsuario>`
-  - [ ] Comando `devolver <idRecurso>`
-  - [ ] Comando `listar`
-  - [ ] Comando `salir`
+- [x] Implementar menú interactivo:
+  - [x] Comando `prestar <idRecurso> <idUsuario>`
+  - [] Comando `devolver <idRecurso>`
+  - [x] Comando `listar`
+  - [x] Comando `salir`
+  - [ ] Mejorar el diseño del ouput 
+  - [ ] hacer javadoc 
 
 ---
 

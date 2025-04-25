@@ -15,7 +15,6 @@ public class BibliotecaManager implements Prestamista {
         usuarios = new HashMap<>();
     }
 
-    // Implementación del método prestar de Prestamista
     public boolean prestar(RecursoBiblioteca recurso, Usuario usuario) {
         if (recurso.getEstado() == EstadoRecurso.DISPONIBLE) {
             recurso.setEstado(EstadoRecurso.PRESTADO);
@@ -27,7 +26,6 @@ public class BibliotecaManager implements Prestamista {
         }
     }
 
-    // Implementación del método devolver de Prestamista
     public boolean devolver(RecursoBiblioteca recurso) {
         if (recurso.getEstado() == EstadoRecurso.PRESTADO) {
             recurso.setEstado(EstadoRecurso.DISPONIBLE);
@@ -61,4 +59,9 @@ public class BibliotecaManager implements Prestamista {
             System.out.println(recurso.descripcion());
         }
     }
+    
+
+
+        
+    
 }
