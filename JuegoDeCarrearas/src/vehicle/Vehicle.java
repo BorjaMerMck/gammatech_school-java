@@ -19,7 +19,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Vehicle implements Raceable, Maintainable {
+	/**
+	 * Modelo de vehículo
+	 */
     private final String model;
+    
     private EngineType engineType;
     private double maxSpeed;
     private TrackType preferredTrack;

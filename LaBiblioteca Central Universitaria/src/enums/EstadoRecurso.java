@@ -1,5 +1,7 @@
 package enums;
 
-public class EstadoRecurso {
-
+public enum EstadoRecurso {
+	DISPONIBLE,
+    PRESTADO,
+    RESERVADO
 }

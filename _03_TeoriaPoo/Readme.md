@@ -1,5 +1,8 @@
 
 # Java - Conceptos Básicos
+Lastupdate  24/04/2025
+things to improve:
+enum 
 
 ## Objeto
 Un **objeto** es una instancia de una clase. Contiene **atributos** (estado) y **métodos** (comportamiento).
@@ -100,6 +103,8 @@ class Coche extends Vehiculo {
 }
 ```
 
+
+doble nivel de herencia? 
 ## Interfaces
 Una **interfaz** define un contrato que las clases deben cumplir. Solo contiene la firma de los métodos, sin implementación.
 
@@ -130,6 +135,7 @@ enum Dia {
     LUNES, MARTES, MIERCOLES, JUEVES, VIERNES
 }
 ```
+https://jarroba.com/enum-enumerados-en-java-con-ejemplos/
 
 ## @Override
 La anotación `@Override` indica que un método está sobrescribiendo un método de una superclase o interfaz.

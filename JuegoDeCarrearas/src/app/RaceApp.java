@@ -1,10 +1,6 @@
 package app;
 
-/**
- * Simula una correra de coches con diferentes coches
- * @author Borja Merchan Mckenna
- * @version 1.0
- */
+
 import vehicle.*;
 import track.TrackType;
 import driver.Driver;
