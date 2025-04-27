@@ -25,7 +25,7 @@ src/
 ```
 
 
-![UML Del ejercicio](ruta-de-la-imagen)
+![UML Del ejercicio](https://github.com/BorjaMerMck/gammatech_school-java/blob/main/LaBiblioteca%20Central%20Universitaria/uml.PNG?raw=true)
 
 ---
 
