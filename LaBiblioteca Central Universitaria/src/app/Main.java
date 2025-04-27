@@ -1,5 +1,7 @@
 package app;
 
+
+
 import java.util.Scanner;
 import model.*;
 import enums.EstadoRecurso;
@@ -25,50 +27,11 @@ public class Main {
         manager.agregarRecurso(new DVD("D002", "El Señor de los Anillos", 180));
 
        
-        try {
-        	
-        	 while (true) {
-                 System.out.print(">> ");
-                 String[] input = scanner.nextLine().split(" ");
-                 String comando = input[0];
+        manager.mostrarMenu(); 
 
-                 switch (comando) {
-                     case "prestar":
-                         if (input.length < 3) {
-                             System.out.println("Uso correcto: prestar <idRecurso> <idUsuario>");
-                             break;
-                         }
-                         manager.prestar(
-                             manager.obtenerRecurso(input[1]),
-                             manager.obtenerUsuario(input[2])
-                         );
-                         break;
-
-                     case "devolver":
-                         if (input.length < 2) {
-                             System.out.println("Uso correcto: devolver <idRecurso>");
-                             break;
-                         }
-                         manager.devolver(manager.obtenerRecurso(input[1]));
-                         break;
-
-                     case "listar":
-                         manager.listarRecursos();
-                         break;
-
-                     case "salir":
-                         System.out.println("¡Adiós!");
-                         return;
-
-                     default:
-                         System.out.println("Comando no reconocido.");
-                 }
-             }
-         
-        }catch(NullPointerException e) {
-        	System.err.println("Has Introducidomal el orden..");
-        }catch(Exception e) {
-        	e.getMessage();
-        }
-    }      
+        
+        
+    }       
 }
+    
+   

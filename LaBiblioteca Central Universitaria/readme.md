@@ -18,10 +18,14 @@ src/
 └── model/
     ├── DVD.java
     ├── Libro.java
+    ├── Colors.java
     ├── RecursoBiblioteca.java
     ├── Revista.java
     └── Usuario.java
 ```
+
+
+![UML Del ejercicio](ruta-de-la-imagen)
 
 ---
 
@@ -85,19 +89,13 @@ src/
 - [x] Leer comandos con `Scanner`
 - [x] Implementar menú interactivo:
   - [x] Comando `prestar <idRecurso> <idUsuario>`
-  - [] Comando `devolver <idRecurso>`
+  - [x] Comando `devolver <idRecurso>`
   - [x] Comando `listar`
   - [x] Comando `salir`
-  - [ ] Mejorar el diseño del ouput 
-  - [ ] hacer javadoc 
-  - [ ] test errores
+  - [x] Mejorar el diseño del ouput 
+  - [x] hacer javadoc 
+  - [x] test errores
 ---
 
-### 📌 Bonus: Diagrama UML (Opcional, recomendado)
-- [ ] Representar claramente:
-  - [ ] `BibliotecaManager` (implementa `Prestamista`)
-  - [ ] `RecursoBiblioteca` (clase abstracta) y subclases (`Libro`, `Revista`, `DVD`)
-  - [ ] `Usuario`
-  - [ ] `EstadoRecurso`
 
 </details>

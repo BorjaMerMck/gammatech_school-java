@@ -4,24 +4,27 @@ import model.RecursoBiblioteca;
 import model.Usuario;
 
 /**
+ * Interfaz que define las operaciones de préstamo y devolución de recursos.
  * 
- * @version 0,1;
- * @author Borja Merchan Mckenna 
+ * @author Borja merchan Mckenna
+ * @version 1.0
+ * @since 1.0
  */
-
 public interface Prestamista {
-    /**
-     * Intenta prestar un recurso a un usuario.
-     * @param recurso El recurso a prestar.
-     * @param usuario El usuario que solicita el préstamo.
-     * @return true si el préstamo se realizó con éxito, false en caso contrario.
+	   /**
+     * Presta un recurso a un usuario.
+     *
+     * @param recurso Recurso a prestar.
+     * @param usuario Usuario que solicita el préstamo.
+     * @return true si el préstamo es exitoso, false si no.
      */
     boolean prestar(RecursoBiblioteca recurso, Usuario usuario);
 
     /**
-     * Intenta devolver un recurso prestado.
-     * @param recurso El recurso a devolver.
-     * @return true si la devolución fue exitosa, false en caso contrario.
+     * Devuelve un recurso prestado.
+     *
+     * @param recurso Recurso a devolver.
+     * @return true si la devolución es exitosa, false si no.
      */
     boolean devolver(RecursoBiblioteca recurso);
 }
