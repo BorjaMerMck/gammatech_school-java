@@ -1,12 +1,29 @@
-##for each
-for 
-while
-do while
+## variables
+
+## Condiciones
+### if -
+
+### swicht
+
+
+
+
+## Bucles
+###for each
+
+###for 
+###while
+###do while
 
 
 ## Metodos de String
 
-- split()
+###split()
+
+## Coleciones
+
+## ficheros
+
 
 
 
