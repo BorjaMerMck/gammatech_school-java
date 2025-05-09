@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Bean de dirección (solo uno) -->
+    <bean id="direccionCasa" class="es.curso.spring08.Direccion">
+        <property name="tipoVia">
+            <value>CALLE</value> <!-- Valor del enum TipoVia -->
+        </property>
+        <property name="nombreVia" value="Mayor"/>
+        <property name="codigoPostal" value="28013"/>
+        <property name="numero" value="12"/>
+    </bean>
+
+    <!-- Bean de propietario -->
+    <bean id="propietario" class="es.curso.spring08.Persona">
+        <property name="nombre" value="Luis García"/>
+        <property name="dni" value="12345678A"/>
+        <property name="telefono" value="600112233"/>
+        <property name="direccion" ref="direccionCasa"/>
+    </bean>
+
+    <!-- Habitaciones -->
+    <bean id="habitacion1" class="es.curso.spring08.Habitacion">
+        <property name="numeroHabitacion" value="1"/>
+        <property name="tipoHabitacion" value="Dormitorio"/>
+        <property name="metrosCuadrados" value="12.5"/>
+    </bean>
+
+    <bean id="habitacion2" class="es.curso.spring08.Habitacion">
+        <property name="numeroHabitacion" value="2"/>
+        <property name="tipoHabitacion" value="Salón"/>
+        <property name="metrosCuadrados" value="20.0"/>
+    </bean>
+
+    <!-- Lista de habitaciones -->
+    <bean id="listaHabitaciones" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="habitacion1"/>
+                <ref bean="habitacion2"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <!-- Casa completa -->
+    <bean id="casa" class="es.curso.spring08.Casa">
+        <property name="direccion" ref="direccionCasa"/>
+        <property name="propietario" ref="propietario"/>
+        <property name="precioAlquiler" value="950.0"/>
+        <property name="habitaciones" ref="listaHabitaciones"/>
+    </bean>
+
+</beans>
