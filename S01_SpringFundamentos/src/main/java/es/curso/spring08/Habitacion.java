@@ -5,13 +5,24 @@ public class Habitacion {
     private String tipoHabitacion;
     private double metrosCuadrados;
 
-    // Getters y setters
-    public int getNumeroHabitacion() { return numeroHabitacion; }
-    public void setNumeroHabitacion(int numeroHabitacion) { this.numeroHabitacion = numeroHabitacion; }
+    public int getNumeroHabitacion() { 
+    	return numeroHabitacion; 
+    }
+    public void setNumeroHabitacion(int numeroHabitacion) { 
+    	this.numeroHabitacion = numeroHabitacion; 
+    }
 
-    public String getTipoHabitacion() { return tipoHabitacion; }
-    public void setTipoHabitacion(String tipoHabitacion) { this.tipoHabitacion = tipoHabitacion; }
+    public String getTipoHabitacion() { 
+    	return tipoHabitacion; 
+    }
+    public void setTipoHabitacion(String tipoHabitacion) { 
+    	this.tipoHabitacion = tipoHabitacion; 
+    }
 
-    public double getMetrosCuadrados() { return metrosCuadrados; }
-    public void setMetrosCuadrados(double metrosCuadrados) { this.metrosCuadrados = metrosCuadrados; }
+    public double getMetrosCuadrados() { 
+    	return metrosCuadrados; 
+    }
+    public void setMetrosCuadrados(double metrosCuadrados) { 
+    	this.metrosCuadrados = metrosCuadrados; 
+    }
 }

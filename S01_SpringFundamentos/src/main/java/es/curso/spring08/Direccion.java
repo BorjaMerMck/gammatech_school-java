@@ -6,16 +6,31 @@ public class Direccion {
     private String codigoPostal;
     private String numero;
 
-    // Getters y setters
-    public TipoVia getTipoVia() { return tipoVia; }
-    public void setTipoVia(TipoVia tipoVia) { this.tipoVia = tipoVia; }
+    public TipoVia getTipoVia() { 
+    	return tipoVia; 
+    }
+    public void setTipoVia(TipoVia tipoVia) { 
+    	this.tipoVia = tipoVia; 
+    }
 
-    public String getNombreVia() { return nombreVia; }
-    public void setNombreVia(String nombreVia) { this.nombreVia = nombreVia; }
+    public String getNombreVia() { 
+    	return nombreVia; 
+    }
+    public void setNombreVia(String nombreVia) { 
+    	this.nombreVia = nombreVia; 
+    }
 
-    public String getCodigoPostal() { return codigoPostal; }
-    public void setCodigoPostal(String codigoPostal) { this.codigoPostal = codigoPostal; }
+    public String getCodigoPostal() { 
+    	return codigoPostal; 
+    }
+    public void setCodigoPostal(String codigoPostal) { 
+    	this.codigoPostal = codigoPostal; 
+    }
 
-    public String getNumero() { return numero; }
-    public void setNumero(String numero) { this.numero = numero; }
+    public String getNumero() { 
+    	return numero; 
+    }
+    public void setNumero(String numero) { 
+    	this.numero = numero; 
+    }
 }

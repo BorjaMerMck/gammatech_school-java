@@ -17,15 +17,23 @@ public class main {
 
         System.out.println("Precio alquiler: " + casa.getPrecioAlquiler() + "€");
 
-        System.out.println("\n--- Habitaciones ---");
+        System.out.println("\n--- Habitaciones de la casa ---");
         for (Habitacion h : casa.getHabitaciones()) {
             System.out.println("Hab. #" + h.getNumeroHabitacion() + " (" +
                     h.getTipoHabitacion() + ") - " +
-                    h.getMetrosCuadrados() + " m²");
+                    h.getMetrosCuadrados() + " mCuadrados");
+            		
         }
 
+        System.out.println("\n--- Inquilinos ---");
+        for (Inquilino i : casa.getInquilinos()) {
+            System.out.println(i.getNombre() + " (DNI: " + i.getDni() + ", Telefono: " + i.getTelefono() + ")");
+        }
+        
+        
+        
         Persona p = casa.getPropietario();
-        System.out.println("\nPropietario: " + p.getNombre() + " (DNI: " +
-                p.getDni() + ", Tel: " + p.getTelefono() + ")");
+        System.out.println("\nPropietario de la casa: " + p.getNombre() + " (DNI: " +
+                p.getDni() + ", Telefono: " + p.getTelefono() + ")");
     }
 }
